@@ -10,19 +10,19 @@ import Navbar from './components/Navbar'
 function App() {
   return (
     <Router>
-      <Navbar/>
+      <Navbar />
       <Switch>
         <Route exact path='/'>
-          <Home/>
+          <Home />
         </Route>
         <Route path='/about'>
-          <About/>
+          <About />
         </Route>
         <Route path='/cocktail/:id'>
-          <SingleCocktail/>
+          <SingleCocktail />
         </Route>
         <Route path='*'>
-          <Error/>
+          <Error />
         </Route>
       </Switch>
     

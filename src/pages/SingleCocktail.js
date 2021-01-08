@@ -1,6 +1,6 @@
 import React from 'react'
 
-SingleCocktail = () => {
+const SingleCocktail = () => {
     return (
         <div>
            <h1>SingleCocktail component</h1> 
