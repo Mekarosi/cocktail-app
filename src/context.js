@@ -71,7 +71,7 @@ useEffect(()=>{
     )
 }
 
-// make sure use
+// make sure to use custom context
 export const useGlobalContext = () => {
     return useContext(AppContext)
   }

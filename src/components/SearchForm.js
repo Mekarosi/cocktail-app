@@ -1,6 +1,8 @@
 import React from 'react'
+import { useGlobalContext } from '../context'
 
-function SearchForm() {
+const SearchForm = () => {
+    const { searchTerm } = useGlobalContext()
     return (
         <div>
             <h1>SearchForm component</h1>
