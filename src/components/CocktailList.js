@@ -9,7 +9,6 @@ const CocktailList = () => {
     if (loading) {
         return <Loading />
     }
-
     if (cocktails.length < 1) {
         return  (
             <h2 className='section-title'>
@@ -18,9 +17,15 @@ const CocktailList = () => {
           )
     }
     return (
-        <div>
-            <h1>Cocktail List component</h1>
-        </div>
+        <section className='section'>
+            <h2 className='section-title'>cocktails</h2>
+            <div className="cocktails-center">
+                {cocktails.map((item)=>{
+                    return <Cocktail key={item.id} {...item} />
+                }
+                )}
+            </div>
+        </section>
     )
 }
 

@@ -17,8 +17,9 @@ const fetchDrinks = useCallback(async () => {
     try {
         const response = await fetch(`${url}${searchTerm}`)
         const data = await response.json()
+        
         const {drinks} = data
-
+        
         if(drinks){
             const newCocktails = drinks.map((item) => {
 
@@ -61,10 +62,7 @@ useEffect(()=>{
         value={{
             loading,
             cocktails,
-            searchTerm,
-            setCocktails,
-
-
+            setSearchTerm,
         }}>
            {children}
         </AppContext.Provider>
