@@ -6,7 +6,7 @@ const Cocktail = ({ image, name, id, info, glass }) => {
         <acticle className='cocktail'>
             <div className='img-container'>
                <img src={image} alt={name}/>
-               <div className="cocktail-feeter">
+               <div className="cocktail-footer">
                    <h3>{name}</h3>
                    <h4>{glass}</h4>
                    <p>{info}</p>
